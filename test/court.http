@@ -1,0 +1,20 @@
+GET http://localhost/api/courts HTTP/1.1
+
+###
+POST http://localhost/api/courts HTTP/1.1
+content-type: application/json
+
+{
+    "player_name" : "Test 1"
+}
+
+###
+DELETE http://localhost/api/courts/640966afc8dc380013b3db57 HTTP/1.1
+
+###
+PUT http://localhost/api/courts/64096c8bc8dc380013b3db5f HTTP/1.1
+content-type: application/json
+
+{
+    "player_name" : "Test 2"
+}
