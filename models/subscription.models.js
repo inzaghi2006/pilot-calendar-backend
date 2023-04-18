@@ -14,6 +14,6 @@ const SubscriptionSchema = new Schema({
 })
 
 //create model for todo
-const Subscription = mongoose.model('subscriptions', SubscriptionSchema);
+const Subscription = mongoose.model('subscription', SubscriptionSchema);
 
 module.exports = Subscription;

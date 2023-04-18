@@ -14,6 +14,6 @@ const SubscriptionTypeSchema = new Schema({
 })
 
 //create model for todo
-const SubscriptionType = mongoose.model('subscription-types', SubscriptionTypeSchema);
+const SubscriptionType = mongoose.model('subscription-type', SubscriptionTypeSchema);
 
 module.exports = SubscriptionType;
