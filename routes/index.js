@@ -10,6 +10,7 @@ const subscriptionRouter = require('./subscription.routes');
 const subscriptionTypeRouter = require('./subscriptionType.routes');
 const sportRouter = require('./sport.routes');
 const sportRateRouter = require('./sportRate.routes');
+const tournamentRouter = require('./tournament.routes');
 
 rootRouter.use('/members', memberRouter);
 rootRouter.use('/players', memberRouter);
@@ -21,6 +22,7 @@ rootRouter.use('/subscriptions', subscriptionRouter);
 rootRouter.use('/subscription-types', subscriptionTypeRouter);
 rootRouter.use('/sports', sportRouter);
 rootRouter.use('/sport-rates', sportRateRouter);
+rootRouter.use('/tournaments', tournamentRouter);
 
 
 module.exports = rootRouter;
