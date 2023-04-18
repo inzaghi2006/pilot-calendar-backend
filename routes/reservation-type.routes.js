@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Controller = require('../controllers/court.controllers');
+const Controller = require('../controllers/reservationType.controllers');
 
 router.route('/')
   .get(Controller.search)

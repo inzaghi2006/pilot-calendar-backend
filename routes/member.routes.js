@@ -1,14 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const MemberController = require('../controllers/member.controllers');
+const Controller = require('../controllers/member.controllers');
 
 router.route('/')
-  .get(MemberController.search)
-  .post(MemberController.create);
+  .get(Controller.search)
+  .post(Controller.create);
 
 router.route('/:id')
-  .get(MemberController.detail)
-  .delete(MemberController.delete)
-  .put(MemberController.update);
+  .get(Controller.detail)
+  .delete(Controller.delete)
+  .put(Controller.update);
 
 module.exports = router;
