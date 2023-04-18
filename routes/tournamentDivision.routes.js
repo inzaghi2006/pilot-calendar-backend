@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Controller = require('../controllers/tournamentEvent.controllers');
+const Controller = require('../controllers/tournamentDivision.controllers');
 
 router.route('/')
   .get(Controller.search)
