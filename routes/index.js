@@ -8,6 +8,7 @@ const schedulerRouter = require('./scheduler.routes');
 const reservationTypeRouter = require('./reservationType.routes');
 const subscriptionRouter = require('./subscription.routes');
 const subscriptionTypeRouter = require('./subscriptionType.routes');
+const sportRouter = require('./sport.routes');
 
 rootRouter.use('/members', memberRouter);
 rootRouter.use('/players', memberRouter);
@@ -17,6 +18,7 @@ rootRouter.use('/scheduler', schedulerRouter);
 rootRouter.use('/reservation-types', reservationTypeRouter);
 rootRouter.use('/subscriptions', subscriptionRouter);
 rootRouter.use('/subscription-types', subscriptionTypeRouter);
+rootRouter.use('/sports', sportRouter);
 
 
 module.exports = rootRouter;
