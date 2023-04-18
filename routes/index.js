@@ -7,6 +7,7 @@ var reservationRouter = require('./reservation.routes');
 var schedulerRouter = require('./scheduler.routes');
 
 rootRouter.use('/members', memberRouter);
+rootRouter.use('/players', memberRouter);
 rootRouter.use('/courts', courtRouter);
 rootRouter.use('/reservations', reservationRouter);
 rootRouter.use('/scheduler', schedulerRouter);

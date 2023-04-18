@@ -1,1 +1,0 @@
-GET http://localhost/api/scheduler/loadData HTTP/1.1
