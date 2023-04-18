@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 //create schema for a post
-const SportSchema = new Schema({
+const TournamentSchema = new Schema({
   tournament_name: {
     type: String,
     required: [true, 'Tournament Name is required']
@@ -14,6 +14,6 @@ const SportSchema = new Schema({
 })
 
 //create model for todo
-const Tournament = mongoose.model('tournament', SportSchema);
+const Tournament = mongoose.model('tournament', TournamentSchema);
 
 module.exports = Tournament;
