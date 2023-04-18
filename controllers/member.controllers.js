@@ -6,7 +6,7 @@ const MemberController = {};
 MemberController.search = (req, res, next) => {
   Member.find(req.query)
     .then(data => res.json(data))
-    .catch(next);
+    .catch(error => res.json(error));
 }
 
 MemberController.detail = (req, res, next) => {

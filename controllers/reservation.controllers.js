@@ -5,7 +5,7 @@ const ReservationController = {};
 ReservationController.search = (req, res, next) => {
   Reservation.find(req.query)
     .then(data => res.json(data))
-    .catch(next);
+    .catch(error => res.json(error));
 }
 
 ReservationController.create = (req, res, next) => {

@@ -1,46 +1,46 @@
-const MemberSubscription = require('../models/subscription.models');
+const Subscriptions = require('../models/subscription.models');
 
 
-const MemberSubscriptionController = {};
+const SubscriptionsController = {};
 
-MemberSubscriptionController.search = (req, res, next) => {
-  MemberSubscription.find(req.query)
-    .then(data => res.json(data))
-    .catch(next);
-}
-
-MemberSubscriptionController.detail = (req, res, next) => {
-  MemberSubscription.findOne(req.query)
+SubscriptionsController.search = (req, res, next) => {
+  Subscriptions.find(req.query)
     .then(data => res.json(data))
     .catch(error => res.json(error));
 }
 
-MemberSubscriptionController.create = (req, res, next) => {
-  MemberSubscription.create(req.body)
+SubscriptionsController.detail = (req, res, next) => {
+  Subscriptions.findOne(req.query)
     .then(data => res.json(data))
     .catch(error => res.json(error));
 }
 
-MemberSubscriptionController.delete = (req, res, next) => {
-  MemberSubscription.findOneAndDelete({ "_id": req.params.id })
+SubscriptionsController.create = (req, res, next) => {
+  Subscriptions.create(req.body)
+    .then(data => res.json(data))
+    .catch(error => res.json(error));
+}
+
+SubscriptionsController.delete = (req, res, next) => {
+  Subscriptions.findOneAndDelete({ "_id": req.params.id })
     .then(data => res.json({ ...data, 'status': 'ok' }))
     .catch(error => res.json(error));
 }
 
-MemberSubscriptionController.update = (req, res, next) => {
-  MemberSubscription.findByIdAndUpdate(req.params.id, req.body)
+SubscriptionsController.update = (req, res, next) => {
+  Subscriptions.findByIdAndUpdate(req.params.id, req.body)
     .then(data => res.json(data))
     .catch(error => res.json(error));
 }
 
-MemberSubscriptionController.deleteAll = (req, res, next) => {
-  MemberSubscription.deleteMany({})
+SubscriptionsController.deleteAll = (req, res, next) => {
+  Subscriptions.deleteMany({})
     .then(data => res.json({ ...data, 'status': 'ok' }))
     .catch(error => res.json(error));
 }
 
 
-module.exports = MemberSubscriptionController;
+module.exports = SubscriptionsController;
 
 
 
