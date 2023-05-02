@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 //create schema for a post
 const ReservationTypeSchema = new Schema({
-  reservation_type_name: {
+  name: {
     type: String,
     required: [true, 'Resevation Type Name is required']
   },

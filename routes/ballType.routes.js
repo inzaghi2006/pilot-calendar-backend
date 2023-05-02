@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Controller = require('../controllers/divisionPlayer.controllers');
+const Controller = require('../controllers/ballType.controllers');
 
 router.route('/')
   .get(Controller.search)

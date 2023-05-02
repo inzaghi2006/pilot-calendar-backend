@@ -3,11 +3,14 @@ const Schema = mongoose.Schema;
 
 //create schema for a post
 const SportSchema = new Schema({
-  sport_name: {
+  name: {
     type: String,
     required: [true, 'Sport Name is required']
   },
-
+  color: {
+    type: String,
+    required: [true, 'Sport color is required']
+  },
 
 }, {
   timeStamps: true

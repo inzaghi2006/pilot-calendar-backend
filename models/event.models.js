@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 //create schema for a post
-const SportRateSchema = new Schema({
+const EventSchema = new Schema({
   name: {
     type: String,
-    required: [true, 'Sport Rate Name is required']
+    required: [true, 'Event Name is required']
   },
 
 
@@ -14,6 +14,6 @@ const SportRateSchema = new Schema({
 })
 
 //create model for todo
-const SportRate = mongoose.model('sport-rate', SportRateSchema);
+const Event = mongoose.model('event', EventSchema);
 
-module.exports = SportRate;
+module.exports = Event;

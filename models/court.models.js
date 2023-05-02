@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 //create schema for a post
 const CourtSchema = new Schema({
-  court_name: {
+  name: {
     type: String,
-    required: [true, 'Court Name is required']
+    required: [true, 'Name is required']
   },
 
 

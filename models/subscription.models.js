@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 //create schema for a post
 const SubscriptionSchema = new Schema({
-  subscription_name: {
+  name: {
     type: String,
     required: [true, 'Subscription Name is required']
   },
